@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About — Ryan Stenersen</title>
   <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100">
   <!-- NAV -->
@@ -13,7 +14,7 @@
       <a href="index.html" class="text-xl font-semibold">Ryan Stenersen</a>
       <ul class="flex items-center gap-6 text-gray-800">
         <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white" href="index.html">Home</a></li>
-        <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white" href="about.html">About</a></li>
+        <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white active" href="about.html">About</a></li>
         <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white" href="portfolio.html">Portfolio</a></li>
         <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white" href="contact.html">Contact</a></li>
         <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white" href="signin.html">Sign In</a></li>
@@ -21,9 +22,33 @@
       </ul>
     </div>
   </nav>
-<!-- MAIN -->
+  <section class="max-w-4xl mx-auto p-5 rounded-lg flex justify-between" id="About">
+      <div class="bg-green-200 rounded-xl p-5">
+          <h1 class="text-3xl font-bold text-gray-800 mb-4">About</h1>
+          <p class="text-gray-600 leading-relaxed">
+              I’m Ryan, a developer who enjoys bringing creative ideas to life through code.
+              My interests span game development, web design, and embedded systems, and I like exploring how technology can
+              be used in fun, interactive, and practical ways.
+          </p>
+          <p class="text-gray-600 leading-relaxed mt-4">
+              Some of my favorite projects include <em>Duck Quest</em>, a Unity-based 2D adventure game,
+              and a custom compiler for the bC language written in C++ with Flex and Bison.
+              I’m also building DMX-controlled LED glasses that sync with stage lighting systems—a mix of hardware,
+              microcontrollers, and creative design. Each project has pushed me to learn new tools,
+              problem-solve in different ways, and grow as a developer.
+          </p>
+          <p class="text-gray-600 leading-relaxed mt-4">
+              Outside of computer science, I enjoy collecting Pokémon cards, playing games, and
+              working on personal side projects. I’m also into cars, sports such as UFC and football, playing pool and
+              most importantly, I like to keep learning, building, and staying active.
+          </p>
+      </div>
+      <div class="p-5 rounded-md">
+          <img src="IMG_6583.jpg" class="max-w-xs rounded-lg shadow-lg">
+      </div>
+  </section>
   <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-300">
+  <footer class="bg-gray-500 text-gray-300">
     <div class="max-w-6xl mx-auto px-4 py-8 text-sm flex flex-col md:flex-row items-center justify-between gap-4">
       <p>&copy; 2025 Ryan Stenersen</p>
       <nav class="flex gap-6">

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio — Ryan Stenersen</title>
   <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100">
   <!-- NAV -->
@@ -14,16 +15,33 @@
       <ul class="flex items-center gap-6 text-gray-800">
         <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white" href="index.html">Home</a></li>
         <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white" href="about.html">About</a></li>
-        <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white" href="portfolio.html">Portfolio</a></li>
+        <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white active" href="portfolio.html">Portfolio</a></li>
         <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white" href="contact.html">Contact</a></li>
         <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white" href="signin.html">Sign In</a></li>
         <li><a class="block px-3 py-2 rounded hover:bg-gray-900 hover:text-white" href="signup.html">Sign Up</a></li>
       </ul>
     </div>
   </nav>
-
+  <section class="text-center p-10 bg-white" id="Projects"><h1 class="text-3xl text-center font-bold text-gray-800 mb-4">
+      Projects</h1>
+      <div class="grid gap-6 md:grid-cols-3">
+          <div class="rounded-lg bg-blue-500 text-white p-6 shadow-lg hover:scale-105 transistion-transform">
+              <h3 class="text-xl font-semibold mb-2"> Duck Quest - Game Development Project </h3>
+              <p class="text-sm p-5"> Duck Quest is a 2D top-down adventure game inspired by The Legend of Zelda and Cat Quest, created as part of a Software Engineering I course. Built in Unity with C#, the project was a collaborative effort among four teammates, focusing on both gameplay design and software engineering principles. My contributions included developing the menu systems, pause inventory, joystick input for mobile support, HUD elements such as health and currency counters, and integrating sound effects for player actions. The game features puzzles, dungeon exploration, NPC dialogue, and collectible items like keys and chests.</p>
+              <p class="text-sm p-5"> Built on Unity, VS Code</p>
+          </div>
+          <div class="rounded-lg bg-blue-500 text-white p-6 shadow-lg hover:scale-105 transistion-transform"><h3 class="text-xl font-semibold mb-2"> Compiler </h3>
+              <p class="text-sm"> For my Compilers course (CS445), I built a full compiler for a simplified programming language called bC. Implemented in C++ using Flex and Bison, the compiler performs lexical analysis, parsing, semantic checks, and code generation. My design included a robust abstract syntax tree, a symbol table for type checking, and logic for handling arrays, functions, and control structures.</p>
+          </div>
+          <div class="rounded-lg bg-blue-500 text-white p-6 shadow-lg hover:scale-105 transistion-transform"><h3 class="text-xl font-semibold mb-2"> DMX-Controlled LED Glasses</h3>
+              <p class="text-sm">For my senior Capstone project, my team and I are designing and developing a pair of LED-integrated glasses that can be controlled through the DMX512 lighting protocol. This project combines embedded systems, digital electronics, and creative design to build a device that bridges traditional entertainment technology with wearable computing.
+                  The project centers on an ATmega328p microcontroller, which serves as the core controller for the LED system. Using a DMX512 interface with RS-485 transceivers, the glasses are able to receive industry-standard lighting commands and translate them into dynamic visual patterns across the LED matrix embedded in the lenses. This allows the glasses to integrate seamlessly with existing stage and event lighting systems, meaning they can respond to the same cues as spotlights, strobes, and other show elements.
+              </p>
+          </div>
+      </div>
+  </section>
   <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-300">
+  <footer class="bg-gray-500 text-gray-300">
     <div class="max-w-6xl mx-auto px-4 py-8 text-sm flex flex-col md:flex-row items-center justify-between gap-4">
       <p>&copy; 2025 Ryan Stenersen</p>
       <nav class="flex gap-6">
